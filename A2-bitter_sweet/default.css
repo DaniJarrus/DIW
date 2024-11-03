@@ -10,144 +10,241 @@ Feel free to use and modify but please provide credits.
 
 /* standard elements */
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
-a {color: #682;}
-a:hover {color: #9A6;}
+
+/* Los párrafos incluidos en un <div> serán de color naranja */
+div>p {
+    color: orange;
+}
+
+/* Las primeras letras de los párrafos se destacarán al doble de su tamaño normal. */
+p::first-letter {
+    font-size: 200%;
+}
+
+a {
+    color: #682;
+}
+
+/* Los enlaces, cuando el ratón pase por encima cambiarán de color */
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
 body {
-	background: #5F8000 url(img/bg.gif) repeat-y center top;
-	color: #333;
-	font: normal 62.5% "Lucida Sans Unicode",sans-serif;
+    background: #5F8000 url(img/bg.gif) repeat-y center top;
+    color: #333;
+    font: normal 62.5% "Lucida Sans Unicode", sans-serif;
+    display: grid;
+    place-items: center;
 }
+
 input {
-	color: #555;
-	font: normal 1.1em "Lucida Sans Unicode",sans-serif;
+    color: #555;
+    font: normal 1.1em "Lucida Sans Unicode", sans-serif;
 }
-p,cite,code,ul {
-	font-size: 1.2em;
-	padding-bottom: 1.2em;
+
+p,
+cite,
+code,
+ul {
+    font-size: 1.2em;
+    padding-bottom: 1.2em;
 }
-ul {margin-left: 1.2em;}
-li {list-style-image: url(img/li.gif);}
-h1 {font-size: 1.4em;}
+
+/* Que las viñetas de las listas sean números romanos en mayúscula */
+ul {
+    margin-left: 1.2em;
+    list-style-type: upper-roman;
+}
+/* NO ES NECESARIO*/
+/* li {
+    list-style-image: url(img/li.gif);
+} */
+/* Que los enlaces de las listas sean de color #26CDCD */
+a>li{
+    color: #26CDCD;
+}
+
+
+h1 {
+    font-size: 1.4em;
+}
+
 blockquote {
-	background: #FFF;
-	border-bottom: 1px solid #EEE;
-	border-top: 1px solid #EEE;
-	color: #333;
-	display: block;
-	font-size: 0.9em;
-	margin-bottom: 1.2em;
-	padding: 6px 12px;
+    background: #FFF;
+    border-bottom: 1px solid #EEE;
+    border-top: 1px solid #EEE;
+    color: #333;
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 1.2em;
+    padding: 6px 12px;
 }
-blockquote p {padding: 3px 0;}
-h1,h2,h3 {color: #654;}
+
+blockquote p {
+    padding: 3px 0;
+}
+
+/* Que los títulos tengan una fuente distinta que el párrafo. */
+h1,
+h2,
+h3 {
+    color: #654;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 /* misc */
-.clearer {clear: both;}
+.clearer {
+    clear: both;
+}
 
 /* structure */
 .container {
-	background: url(img/bgcontainer.gif) repeat-y;
-	width: 702px;
+    background: url(img/bgcontainer.gif) repeat-y;
+    width: 702px;
 }
 
 /* top */
 .top {
-	background: #567300;
-	font: normal 2.4em Verdana,sans-serif;
-	height: 60px;
-	margin: 0 auto;
-	width: 630px;
+    background: #567300;
+    font: normal 2.4em Verdana, sans-serif;
+    height: 60px;
+    margin: 0 auto;
+    width: 630px;
 }
+
 .top a {
-	color: #FFF;
-	display: block;
-	line-height: 60px;
-	text-decoration: none;
-	width: 100%;
+    color: #FFF;
+    display: block;
+    line-height: 60px;
+    text-decoration: none;
+    width: 100%;
 }
-.top span {padding-left: 24px;}
+
+.top span {
+    padding-left: 24px;
+}
+
 .top a:hover {
-	background: #688B00;
-	color: #FFF;
+    background: #688B00;
+    color: #FFF;
 }
 
 /* header */
 .header {
-	background: url(img/header.jpg) no-repeat;
-	height: 180px;
-	margin: 0 auto;
-	width: 630px;
+    background: url(img/header.jpg) no-repeat;
+    height: 180px;
+    margin: 0 auto;
+    width: 630px;
 }
 
 /* item */
-.item {clear: both;}
+.item {
+    clear: both;
+}
+
 .item .date {
-	background: url(img/bgdate.gif) no-repeat;
-	color: #FDD;
-	float: left;
-	height: 40px;
-	text-align: center;
-	width: 36px;
+    background: url(img/bgdate.gif) no-repeat;
+    color: #FDD;
+    float: left;
+    height: 40px;
+    text-align: center;
+    width: 36px;
 }
-.item .date div {padding-top: 4px;}
-.item .date span {font: normal 1.6em serif;}
+
+.item .date div {
+    padding-top: 4px;
+}
+
+.item .date span {
+    font: normal 1.6em serif;
+}
+
 .item .content {
-	float: left;
-	width: 420px;
+    float: left;
+    width: 420px;
 }
+
 .item h1 {
-	background: #567300;
-	color: #FFF;
-	line-height: 40px;
-	padding-left: 16px;
+    background: #567300;
+    color: #FFF;
+    line-height: 40px;
+    padding-left: 16px;
 }
-.item .body {padding: 12px 18px;}
+
+.item .body {
+    padding: 12px 18px;
+}
 
 /* main */
-.main {float: left;}
+.main {
+    float: left;
+}
 
 /* navigation */
 .navigation {
-	float: left;
-	margin-left: 1px;
-	width: 208px;
+    float: left;
+    margin-left: 1px;
+    width: 208px;
 }
+/* Que los menús de “Something”, “Another Thing” y “Third and last” de la barra lateral */
+/* tengan la letra en negro y el fondo del mismo color que los enlaces. #26CDCD */
 .navigation h1 {
-	background: #81AC00;
-	color: #FFF;
-	font-size: 1.3em;
-	line-height: 40px;
-	padding-left: 12px;
+    background: #26CDCD;
+    color: #000000;
+    font-size: 1.3em;
+    line-height: 40px;
+    padding-left: 12px;
 }
-.navigation ul {margin: 0; padding: 0;}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
 .navigation li {
-	border-bottom: 1px solid #D5E8AD;
-	list-style: none;
+    border-bottom: 1px solid #D5E8AD;
+    list-style: none;
 }
+
 .navigation li a {
-	background: #E8F6BF url(img/bgnavigation.gif) repeat-x;	
-	color: #553;
-	display: block;
-	padding: 8px 4px 8px 12px;
-	text-decoration: none;
+    background: #E8F6BF url(img/bgnavigation.gif) repeat-x;
+    color: #553;
+    display: block;
+    padding: 8px 4px 8px 12px;
+    text-decoration: none;
 }
+
 .navigation li a:hover {
-	background: #F0FFC6;
-	color: #553;
+    background: #F0FFC6;
+    color: #553;
+}
+/* Que el cuadro de texto de la primera entrada tenga como fondo un verde clarito (en
+consonancia con los tonos de la página) y un borde que haga que se vea que es un
+cuadro de texto. */
+.first_content .body{
+    background-color: #dcebb2;
+    border: 2px solid #26CDCD;
 }
 
 /* footer */
 .footer {
-	background: url(img/bgfooter.gif) repeat-x;
-	color: #FFF;
-	font-size: 1.1em;
-	line-height: 40px;
-	margin: 0 auto;
-	text-align: center;
-	width: 626px;
+    background: url(img/bgfooter.gif) repeat-x;
+    color: #FFF;
+    font-size: 1.1em;
+    line-height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    width: 626px;
 }
-.footer a {color: #FFF;}
-.footer a:hover {color: #FAFCB0;}
+
+.footer a {
+    color: #FFF;
+}
+
+.footer a:hover {
+    color: #FAFCB0;
+}
