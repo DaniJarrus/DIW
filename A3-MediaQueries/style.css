@@ -1,14 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
-
+/* Estilos globales para todos los elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Bangers', cursive;
 }
-
+/* Estilos para el cuerpo de la página */
 body {
     background-color: transparent;
     color: #f2b48d;
@@ -16,7 +15,7 @@ body {
     flex-direction: column;
     height: 100vh;
 }
-
+/* Estilos para el contenedor del video de fondo */
 .videoContainer {
     width: 100vw;
     height: 100vh;
@@ -28,7 +27,7 @@ body {
     z-index: -1;
     background: black;
 }
-
+/* Estilos para el video de fondo */
 .videoBackground {
     position: absolute;
     top: 50%;
@@ -40,7 +39,7 @@ body {
     pointer-events: none;
     object-fit: cover;
 }
-
+/* Estilos para la cabecera */
 header {
     display: flex;
     justify-content: space-around;
@@ -48,24 +47,24 @@ header {
     padding-top: 20px;
     margin: 0 5em 0 5em;
 }
-
+/* Estilos para la lista de la navegación */
 nav ul {
     list-style: none;
     display: flex;
     gap: 50px;
 }
-
+/* Estilos para los enlaces de la navegación */
 nav a {
     color: #842b10;
     text-decoration: none;
     font-weight: bold;
     font-size: clamp(1rem, -1.5rem + 5vw, 3rem);
 }
-
+/* Estilos para el hover de los enlaces de la navegación */
 nav a:hover{
     color: #f2b48d;
 }
-
+/* Estilos para el contenedor principal */
 main {
     display: flex;
     flex: 1;
@@ -76,19 +75,20 @@ main {
     margin-left: 5em;
     margin-right: 5em;
 }
-
+/* Estilos para el contenido dentro del main */
 .content {
     max-width: 45%;
 }
-
+/* Estilo de la imagen del balon */
 .productImage img {
     max-width: 100%;
     height: auto;
 }
+/* Estilos para el hover de la imagen del balon */
 .productImage img:hover{
     transform: scale(1.05);
 }
-
+/* Estilos para el botón */
 button {
     background-color: #842b10;
     color: #f2b48d;
@@ -100,26 +100,27 @@ button {
     border-radius: 50px;
     margin-top: 1em;
 }
+/* Estilos para el hover del boton */
 button:hover{
     background-color: #f2b48d;
     color: #842b10;
 }
-
+/* Estilos para el footer de la página */
 footer {
     padding: 20px;
     text-align: center;
 }
-
+/* Estilos para los iconos de las RRSS */
 footer a img {
     margin-right: 10px;
 }
-
+/* Media queries para pantallas grandes */
 @media (min-width: 1298px) {
     main{
         gap: 75px;
     }
 }
-
+/* Media queries para pantallas normales */
 @media (max-width: 768px) {
     main {
         flex-direction: column;
@@ -141,13 +142,13 @@ footer a img {
         margin-top: 20px;
     }
 }
-
+/* Media queries para pantallas pequeñas */
 @media (max-width:468px) {
     main{
         margin: 5em 2.5em 5em 2.5em;
     }
 }
-
+/* Media queries para pantallas muy pequeñas */
 @media (max-width: 344px) {
     ul{
         display: grid !important;
