@@ -49,7 +49,7 @@ main {
     max-width: 45%;
 }
 
-.product-image img {
+.productImage img {
     max-width: 100%;
     height: auto;
 }
@@ -85,7 +85,7 @@ footer a img {
         gap: 75px;
     }
 
-    .content, .product-image {
+    .content, .productImage {
         max-width: 90%;
     }
 
