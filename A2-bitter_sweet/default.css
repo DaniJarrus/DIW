@@ -32,7 +32,7 @@ a {
 a:hover {
     color: rgb(0, 0, 0);
 }
-
+/* Que la página esté centrada: */
 body {
     background: #5F8000 url(img/bg.gif) repeat-y center top;
     color: #333;
