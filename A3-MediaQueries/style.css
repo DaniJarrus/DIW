@@ -114,6 +114,10 @@ footer {
 footer a img {
     margin-right: 10px;
 }
+
+footer a img:hover{
+    filter: hue-rotate(300deg);
+}
 /* Media queries para pantallas grandes */
 @media (min-width: 1298px) {
     main{
