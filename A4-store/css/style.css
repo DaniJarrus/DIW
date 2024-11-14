@@ -72,6 +72,61 @@ h3 {
 .navegacion__enlace:hover {
     color: var(--secundario);
 }
+.login{
+    text-decoration: underline;
+}
+.login:hover{
+    cursor: pointer;
+}
+.mostrarPassword{
+    font-size: small;
+}
+
+/* Estilos para la imagen modal */
+
+.modal {
+    display: none; /* Ocultamos el popup de primeras */
+    position: fixed;
+    z-index: 1000; /* Damos valor elevado para asegurarnos que se superponga a todos los demas elementos */
+    left: 50%; /* Ajustes de posicionamiento */
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Tamaño */
+    height: 400px;
+    /* min-width: 20%; */
+    background-color:#9f5cab;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+/* Estilo de la imagen dentro del popup */
+.imagenModal {
+    max-width: 40%;
+    max-height: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el span de cerrar ventana modal */
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar:hover {
+    color: #ff0000;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
 
 /** Grid **/
 .grid {
