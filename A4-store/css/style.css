@@ -74,6 +74,7 @@ h3 {
 }
 .login{
     text-decoration: underline;
+    color:whitesmoke;
 }
 .login:hover{
     cursor: pointer;
@@ -103,7 +104,8 @@ h3 {
     width: 15em;
     height: 13em;
     padding-top: 20px;
-    background-color: var(--primarioOscuro)
+    background-color: var(--primarioOscuro);
+    font-weight: 900;
 }
 
 /* Estilo de la imagen dentro del popup */
@@ -113,6 +115,38 @@ h3 {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
+/* Estilos para el input del password con icono de mostrarPass */
+.input-wrapper {
+    position: relative;
+    width: 271px;
+  }
+  
+  .input {
+    box-sizing: border-box;
+    color: #191919;
+    padding: 15px 15px 15px 35px;
+    width: 100%;
+  }
+  
+  .input.password {
+    padding: 15px 35px 15px 15px;
+  }
+  
+  .input-icon {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .input-icon.password {
+    left: unset;
+    right: 12px;
+  }
 
 /* Estilos para el span de cerrar ventana modal */
 .cerrar {
