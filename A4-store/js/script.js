@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 
 
 window.mostrarImagenModal = function() {
+    
     const modal = document.getElementById("modalLogin");
     modal.style.display = "flex";
     modal.style.flexDirection = "column";
@@ -29,7 +30,7 @@ window.enviarDatos = function() {
     let usuarioTexto = document.getElementById('usuario').value;
     console.log(usuarioTexto)
     let loginTexto = document.getElementById('login');
-    loginTexto.innerText = usuarioTexto;
+    loginTexto.innerText = `Hola, ${usuarioTexto}`;
     cerrarImagenModal();
 }
 
